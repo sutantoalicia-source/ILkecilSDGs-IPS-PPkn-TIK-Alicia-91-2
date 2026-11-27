@@ -1,0 +1,589 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+}
+.header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.header h1 {
+    display: none;
+}
+h1 {
+    color: #F2F8F6;
+    text-align: center;
+}
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 15px;
+    background-color: #558BA7;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.topnav > li {
+    position: relative;
+    flex-shrink: 0;
+}
+.topnav img {
+    display: block;
+    width: 150px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+.topnav li a {
+    display: block;
+    color: #F2F8F6;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+.topnav > li > a:hover,
+.topnav > li.dropdown:hover > a,
+.topnav > li > a:focus {
+    background-color: #F4E4CF;
+    color: #30556C;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: #F4E4CF;
+    box-shadow: 0 8px 16px rgba(48, 85, 108, 0.2);
+    z-index: 1000;
+}
+.dropdown-content a {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    text-align: left;
+    white-space: nowrap;
+    color: #30556C;
+    background-color: #407697;
+}
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+    background-color: #F4E4CF;
+    color: #30556C;
+}
+.topnav li.dropdown:hover > .dropdown-content,
+.topnav li.dropdown:focus-within > .dropdown-content {
+    display: block;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+}
+* { box-sizing: border-box; }
+
+/* Footer */
+.footer {
+    background-color: #F4E4CF;
+    padding: 10px;
+    text-align: center;
+    border-top: 4px solid #558BA7;
+}
+.footer img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .SDGS {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .SDGS-card.sdgs17 {
+        grid-column: 1 / -1;
+        width: 50%;
+    }
+}
+@media (max-width: 700px) {
+    .kodfun-galeri {
+        flex-wrap: wrap;
+    }
+    .kodfun-galeri div {
+        flex: 1 1 40%;
+        height: 250px;
+    }
+}
+@media (max-width: 500px) {
+    .SDGS {
+        grid-template-columns: 1fr;
+    }
+    .SDGS-card.sdgs17 {
+        grid-column: 1;
+        width: 100%;
+    }
+}
+
+/*BODY ISI SEMUA*/
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Apa Itu SDGs */
+.apa-sdgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 90%;
+    max-width: 1600px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #fbf2e6;
+    border-radius: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* pengertian dan pembangaun berkelanjutan tittle hover */
+h4{
+    justify-content: center;
+  align-items: center;
+   display: block;
+  width: 470px;
+  height: 75px;
+  margin: 0 auto 20px auto;
+  background: #3f87a6;
+  color: #083257;
+  padding: 15px 25px;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+h4:hover {
+  color: #fcffbf;
+  text-shadow: 0 0 20px rgba(254, 226, 173, 1);
+  transform: scale(1.1);
+}
+h5{
+    justify-content: center;
+  align-items: center;
+   display: block;
+  width: 470px;
+  height: 75px;
+  margin: 0 auto 20px auto;
+  background: #3f87a6;
+  color: #083257;
+  padding: 15px 25px;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+h5:hover {
+  color: #fcffbf;
+  text-shadow: 0 0 20px rgba(254, 226, 173, 1);
+  transform: scale(1.1);
+}
+
+/* Bagian gambar */
+.sdgs-img {
+    flex: 0 0 40%;
+    width: 40%;
+    max-width: 40%;
+    height: auto;
+    object-fit: contain;
+    padding: 10px;
+    background: #f3eeee;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.sdgs-img:hover {
+    transform: rotate(-1.5deg) scale(1.04);
+    box-shadow: 0 14px 28px rgba(8, 50, 87, 0.25);
+}
+
+/* PEMBANGUNAN BERKELANJUTAN */
+.pembangunan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 90%;
+    max-width: 1600px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #fbf2e6;
+    border-radius: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.contenta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+/* GAMBAR FLIP */
+.imga {
+    position: relative;
+    flex: 0 0 40%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 3px solid #1b839a;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+.imga:hover {
+    transform: translateY(-6px);
+    border-color: #39b5ca;
+    box-shadow: 0 14px 24px rgba(8, 50, 87, 0.2);
+}
+.flip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.flip img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+}
+.flip .top {
+    opacity: 1;
+}
+.flip .bottom {
+    opacity: 0;
+}
+
+/* GAMBAR BERGANTI SAAT HOVER */
+.imga:hover .top {
+    opacity: 0;
+}
+.imga:hover .bottom {
+    opacity: 1;
+}
+
+/* TEKS PEMBANGUNAN */
+.isipembangunan {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: inherit;
+    line-height: 1.4;
+    color: black;
+    text-align: justify;
+}
+.column.middle {
+    width: 100%;
+    padding: 0;
+}
+
+/* Judul SDGs */
+h1.judul-sdgs {
+    display: block;
+    width: calc(100% - 10px);
+    margin: 15px 5px 0;
+    padding: 2px;
+    background-color: #F4E4CF;
+    color: #30556C;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* SDGs Flip Cards */
+.SDGS {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    width: 90%;
+    margin: 40px auto;
+}
+.SDGS-card {
+    height: 420px;
+    perspective: 1000px;
+    transition: transform 0.3s ease;
+}
+.SDGS-card:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+.SDGS-card.sdgs17 {
+    grid-column: 2 / 4;
+    justify-self: center;
+    width: 50%;
+}
+.SDGS-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.SDGS-card:hover .SDGS-inner {
+    transform: rotateY(180deg);
+}
+.SDGS-front, .SDGS-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    background-color: cornsilk;
+    box-shadow: 0 4px 8px rgba(96, 56, 56, 0.5);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+}
+.SDGS-front {
+    text-align: center;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #603c45;
+}
+.SDGS-front img {
+    width: 85%;
+    height: 250px;
+    object-fit: contain;
+    padding: 0;
+}
+.SDGS-front p {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: #8B5365;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.SDGS-back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    color: #30556C;
+}
+.SDGS-back h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(24px, 2.2vw, 38px);
+    font-weight: bold;
+    color: #8B5365;
+    text-align: left;
+    line-height: 1.2;
+    width: 100%;
+    margin: 0 0 35px 0;
+}
+.SDGS-back p {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(17px, 1.3vw, 25px);
+    color: #8B5365;
+    text-align: left;
+    line-height: 1.35;
+    width: 100%;
+    margin: 0;
+}
+
+/* Image Gallery */
+.kodfun-galeri {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    width: 90%;
+    margin: 40px auto;
+}
+.kodfun-galeri > div {
+    flex: 1;
+    min-width: 0;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all 0.8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.kodfun-galeri > div:hover {
+    flex: 5;
+}
+.gallery1 {
+    background-image: url("galeri1.png");
+}
+.gallery2 {
+    background-image: url("galeri2.jpg");
+}
+.gallery3 {
+    background-image: url("galeri3.jpg");
+}
+.gallery4 {
+    background-image: url("galeri4.jpg");
+}
+.gallery5 {
+    background-image: url("galeri5.jpg");
+}
+
+/* H2 galleri */
+h1.galerisdgs {
+    display: block;
+    width: calc(100% - 10px);
+    margin: 15px 5px 0;
+    padding: 2px;
+    background-color: #30556C;
+    color: #F4E4CF;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* AJAKAN */
+.running-text {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #F4E4CF;
+    display: flex;
+    align-items: center;
+}
+.running-text span {
+    display: inline-block;
+    padding-left: 100%;
+    font-size: 28px;
+    font-weight: bold;
+    color: #30556C;
+    animation: jalan 12s linear infinite;
+}
+.running-bottom {
+    margin-top: 50px;
+    height: 70px;
+}
+@keyframes jalan {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* BLACK BG */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffd7da;
+  color: #333;
+}
+.container {
+  margin: 0 auto;
+  min-width: auto;
+  max-width: auto;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 24px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LOADING SCREEN */
+.loadingscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #F4E4CF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+.loadingscreen.selesai {
+    opacity: 0;
+    visibility: hidden;
+}
+.loadingroda {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.loadingroda img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: muter 3s linear infinite;
+}
+.loadingcincin {
+    position: absolute;
+    top: -14px;
+    left: -14px;
+    right: -14px;
+    bottom: -14px;
+    border-radius: 50%;
+    border: 5px solid rgba(85, 139, 167, 0.25);
+    border-top-color: #558BA7;
+    animation: muter 1.2s linear infinite reverse;
+}
+.loadingteks {
+    margin: 0;
+    color: #30556C;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+@keyframes muter {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

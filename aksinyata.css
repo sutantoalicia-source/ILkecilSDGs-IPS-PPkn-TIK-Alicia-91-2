@@ -1,0 +1,108 @@
+/* AKSI NYATA SDGS 4 */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffd7da;
+    color: #333;
+}
+
+/* JUDUL AKSI NYATA SDGS 4 */
+.judulsdgs4 {
+    color: #196C96;
+    background-color: #F4E4CF;
+    text-align: center;
+    width: 85%;
+    margin: 40px auto 20px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* KOTAK POSTER DAN BIODATA */
+.sdgs4 {
+    margin: 30px auto 50px;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #F4E4CF;
+    color: black;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sdgs4-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+}
+
+/* POSTER */
+.foto {
+    position: relative;
+    flex-shrink: 0;
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 3px solid rgb(112, 193, 216);
+}
+
+.foto img {
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* KOTAK HITAM */
+.container {
+    margin: 40px auto 60px;
+    min-width: 300px;
+    max-width: 1100px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 24px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.isi {
+    width: 100%;
+}
+.isi p {
+    text-align: justify;
+}
+
+/* VIDEO KONTEN */
+.video {
+    position: relative;
+    flex-shrink: 0;
+    width: 800px;
+    height: 453px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 3px solid rgb(112, 193, 216);
+    background-color: black;
+}
+
+.video video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.p {
+color:beige
+}

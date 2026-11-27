@@ -1,0 +1,86 @@
+
+/* List Section */
+.list-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #0b2730dd;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Ordered List */
+.list-section ol {
+    border: 1px solid black;
+    background-color: bisque;
+    list-style-position: inside;
+    margin: 10px 10px 10px 25px;
+    padding: 15px 30px 15px 20px;
+}
+
+/* List Items */
+.list-section li {
+    border: 1px solid black;
+    background-color: rgb(132, 198, 216);
+    padding: 5px;
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+/* Nav  */
+.topnav li {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+.list-section h4 {
+    display: block;
+    width: 450px;
+    height: 75px;
+    background: #3f87a6;
+    color: #083257;
+    padding: 15px 25px;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.list-section h4:hover {
+    color: #fcffbf;
+    text-shadow: 0 0 20px rgba(254, 226, 173, 1);
+    transform: scale(1.1);
+}
+.list-section p {
+    color: #F4E4CF;
+}
+/* List Items */
+.list-section li {
+    border: 1px solid black;
+    background-color: rgb(132, 198, 216);
+    padding: 5px;
+    margin: 6px 0;
+    line-height: 1.5;
+    transition: 0.3s ease;
+}
+
+.list-section li:hover {
+    background-color: #bcece5;
+    transform: translateX(8px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-color: #196C96;
+}
+/* Link Daftar Pustaka */
+.list-section li a {
+    color: #083257;
+    font-weight: bold;
+    text-decoration: underline;
+    word-break: break-all;
+    transition: color 0.3s ease;
+}
+
+.list-section li a:hover {
+    color: #196C96;
+}

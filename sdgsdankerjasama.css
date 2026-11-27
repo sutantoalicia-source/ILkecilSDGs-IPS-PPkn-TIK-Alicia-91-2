@@ -1,0 +1,426 @@
+html {
+    scroll-behavior: smooth;
+}
+main {
+    width: 100%;
+    overflow: hidden;
+    color: #083257;
+}
+.judulpill {
+    display: block;
+    width: 470px;
+    max-width: 100%;
+    min-height: 75px;
+    margin: 0 auto 25px;
+    padding: 15px 25px;
+    background: #3f87a6;
+    color: #083257;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.judulpill:hover {
+    color: #fcffbf;
+    text-shadow: 0 0 8px rgba(254, 226, 173, 1), 0 0 20px rgba(254, 226, 173, 0.8);
+    transform: scale(1.06);
+}
+.sectionheading {
+    max-width: 900px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+.sectionheading > p:last-child {
+    color: #526d7d;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 700px;
+}
+.eyebrow {
+    color: #558ba7;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 0 0 14px;
+}
+.lightheading .eyebrow {
+    color: #97ddd9;
+}
+.lightheading > p:last-child {
+    color: #d8e8eb;
+}
+.kotakgambar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    border: 3px solid #39b5ca;
+    border-radius: 18px;
+    background-color: #d9f1ed;
+    color: #30556c;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.kotakgambar img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.herobutton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 22px;
+    background-color: #558ba7;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.herobutton span {
+    margin-left: 12px;
+    font-size: 18px;
+}
+.herobutton:hover {
+    background-color: #30556c;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(8, 50, 87, 0.2);
+}
+.sumber {
+    display: inline-block;
+    margin-top: 12px;
+    color: #558ba7;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #97ddd9;
+}
+.sumber:hover {
+    color: #30556c;
+}
+/* PEMBUKA */
+.herokerja {
+    width: 90%;
+    max-width: 1250px;
+    margin: 55px auto 60px;
+    padding: 50px 40px 45px;
+    background-color: #fbf2e6;
+    border-radius: 35px;
+    box-shadow: 0 15px 35px rgba(8, 50, 87, 0.13);
+    text-align: center;
+}
+.herokerja .judulpill {
+    width: 600px;
+}
+.herokalimat {
+    color: #526d7d;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 auto 28px;
+    max-width: 650px;
+}
+.jenischips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+.jenischips a {
+    padding: 12px 22px;
+    background-color: #558ba7;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.jenischips a:hover {
+    background-color: #30556c;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(8, 50, 87, 0.2);
+}
+/* BAGIAN JENIS KERJA SAMA */
+.bagian {
+    padding: 85px 5% 95px;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 40px;
+    align-items: start;
+}
+.bagianterang {
+    background-color: rgba(244, 228, 207, 0.85);
+}
+.bagiangelap {
+    background-color: #30556c;
+}
+.bagianbalik {
+    grid-template-columns: 1.2fr 0.8fr;
+}
+.bagianbalik .bagiankiri {
+    order: 2;
+}
+.bagianbalik .bagiankanan {
+    order: 1;
+}
+.bagian > div {
+    max-width: 1250px;
+}
+.bagiankiri {
+    position: sticky;
+    top: 20px;
+    text-align: center;
+}
+.nomorbesar {
+    display: block;
+    color: #30556c;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 1;
+    opacity: 0.3;
+    margin-bottom: 10px;
+}
+.bagiangelap .nomorbesar {
+    color: #97ddd9;
+}
+.definisi {
+    color: #526d7d;
+    font-size: 15px;
+    line-height: 1.85;
+    text-align: justify;
+    margin: 0 0 25px;
+}
+.bagiangelap .definisi {
+    color: #d8e8eb;
+}
+.kotaktinggi {
+    width: 100%;
+    height: 260px;
+    border-radius: 22px;
+}
+.bagiankanan {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.bagiangelap .bagiankanan {
+    grid-template-columns: repeat(2, 1fr);
+}
+.kartulebar {
+    grid-column: 1 / -1;
+}
+.kartu {
+    padding: 28px 30px;
+    background-color: #fbf2e6;
+    border-radius: 24px;
+    transition: 0.3s ease;
+}
+.bagianterang .kartu {
+    background-color: #fffaf2;
+}
+.kartu:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 24px rgba(8, 50, 87, 0.18);
+}
+.kartu h3 {
+    color: #196c96;
+    font-size: 19px;
+    line-height: 1.35;
+    margin: 0 0 12px;
+}
+.kartu p {
+    color: #526d7d;
+    font-size: 14px;
+    line-height: 1.85;
+    margin: 0;
+    text-align: justify;
+}
+.kartu .subjudul {
+    margin-top: 14px;
+    font-weight: bold;
+    color: #196c96;
+}
+.kartubiru {
+    background-color: #30556c;
+}
+.bagiangelap .kartubiru {
+    background-color: #3f87a6;
+}
+.kartubiru h3 {
+    color: #97ddd9;
+}
+.bagiangelap .kartubiru h3 {
+    color: #083257;
+}
+.kartubiru p {
+    color: #e1edf0;
+}
+.bagiangelap .kartubiru p {
+    color: #f4e4cf;
+}
+.kartutoska {
+    background-color: #97ddd9;
+}
+.bagianterang .kartutoska {
+    background-color: #97ddd9;
+}
+.kartutoska h3,
+.kartutoska p {
+    color: #30556c;
+}
+.sumberterang {
+    color: #97ddd9;
+    border-bottom-color: #97ddd9;
+}
+.bagiangelap .sumberterang {
+    color: #083257;
+    border-bottom-color: #083257;
+}
+.sumberterang:hover {
+    color: #fcffbf;
+}
+.daftar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.daftar li {
+    margin: 8px 0;
+    padding: 10px 14px;
+    border: 1px solid #558ba7;
+    border-radius: 6px;
+    background-color: #97ddd9;
+    color: #083257;
+    font-size: 13px;
+    line-height: 1.7;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.daftar li:hover {
+    background-color: #bcece5;
+    transform: translateX(8px);
+}
+.negara {
+    list-style: none;
+    margin: 14px 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.negara li {
+    padding: 8px 14px;
+    border-radius: 20px;
+    background-color: #97ddd9;
+    color: #083257;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.negara li:hover {
+    background-color: #3f87a6;
+    color: white;
+}
+/* BUKTI PERAN */
+.buktisection {
+    padding: 85px 5% 100px;
+    background-color: #fbf2e6;
+}
+.buktilayout {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 30px;
+    align-items: stretch;
+}
+.buktiangka {
+    padding: 35px;
+    background-color: #97ddd9;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+.buktiangka:hover {
+    transform: rotate(-1deg);
+}
+.buktiangka span {
+    color: #30556c;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1;
+}
+.buktiangka p {
+    color: #30556c;
+    font-size: 19px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin: 15px 0 0;
+}
+.buktiteks {
+    padding: 35px;
+    background-color: white;
+    border-radius: 28px;
+    grid-row: span 2;
+}
+.buktiteks p {
+    color: #526d7d;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: justify;
+    margin: 0 0 14px;
+}
+.kotakbukti {
+    min-height: 240px;
+    border-radius: 28px;
+}
+@media (max-width: 900px) {
+    .bagian,
+    .bagianbalik,
+    .buktilayout {
+        grid-template-columns: 1fr;
+    }
+    .bagianbalik .bagiankiri,
+    .bagianbalik .bagiankanan {
+        order: initial;
+    }
+    .bagiankiri {
+        position: static;
+    }
+    .bagiangelap .bagiankanan {
+        grid-template-columns: 1fr;
+    }
+    .buktiteks {
+        grid-row: auto;
+    }
+}
+@media (max-width: 600px) {
+    .herokerja {
+        width: 92%;
+        padding: 35px 22px;
+    }
+    .judulpill,
+    .herokerja .judulpill {
+        width: 100%;
+        font-size: 22px;
+    }
+    .bagian,
+    .buktisection {
+        padding: 55px 5%;
+    }
+    .kartu {
+        padding: 22px;
+    }
+    .buktiangka span {
+        font-size: 60px;
+    }
+}

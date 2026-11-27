@@ -1,0 +1,390 @@
+html {
+    scroll-behavior: smooth;
+}
+main {
+    width: 100%;
+    overflow: hidden;
+    color: #083257;
+}
+.judulpill {
+    display: block;
+    width: 470px;
+    max-width: 100%;
+    min-height: 75px;
+    margin: 0 auto 25px;
+    padding: 15px 25px;
+    background: #3f87a6;
+    color: #083257;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.judulpill:hover {
+    color: #fcffbf;
+    text-shadow: 0 0 8px rgba(254, 226, 173, 1), 0 0 20px rgba(254, 226, 173, 0.8);
+    transform: scale(1.06);
+}
+.sectionheading {
+    max-width: 900px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+.sectionheading > p:last-child {
+    color: #526d7d;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 700px;
+}
+.eyebrow {
+    color: #558ba7;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 0 0 14px;
+}
+.lightheading .eyebrow {
+    color: #97ddd9;
+}
+.lightheading > p:last-child {
+    color: #d8e8eb;
+}
+.kotakgambar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    border: 3px solid #39b5ca;
+    border-radius: 18px;
+    background-color: #d9f1ed;
+    color: #30556c;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.kotakgambar img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.herobutton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 22px;
+    background-color: #558ba7;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.herobutton span {
+    margin-left: 12px;
+    font-size: 18px;
+}
+.herobutton:hover {
+    background-color: #30556c;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(8, 50, 87, 0.2);
+}
+.sumber {
+    display: inline-block;
+    margin-top: 12px;
+    color: #558ba7;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #97ddd9;
+}
+.sumber:hover {
+    color: #30556c;
+}
+/* HERO SOLUSI */
+.herosolusi {
+    width: 90%;
+    max-width: 1450px;
+    min-height: 520px;
+    margin: 55px auto 80px;
+    padding: 55px 65px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 35px;
+    background-color: #fbf2e6;
+    border-radius: 35px;
+    box-shadow: 0 15px 35px rgba(8, 50, 87, 0.13);
+}
+.herotext .judulpill {
+    margin: 0 0 22px;
+}
+.herotext h2 {
+    color: #30556c;
+    font-size: 21px;
+    margin: 0 0 25px;
+}
+.herotext p {
+    color: #526d7d;
+    font-size: 15px;
+    line-height: 1.9;
+    text-align: justify;
+    margin: 0 0 15px;
+}
+.herovisual {
+    min-height: 390px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.herocircle {
+    width: 310px;
+    height: 310px;
+    background-color: #97ddd9;
+    border-radius: 50%;
+    position: absolute;
+}
+.kotakhero {
+    width: 88%;
+    max-width: 340px;
+    height: 370px;
+    z-index: 1;
+    border-radius: 25px;
+    transform: rotate(3deg);
+    box-shadow: 0 15px 30px rgba(8, 50, 87, 0.2);
+    transition: 0.4s ease;
+}
+.kotakhero:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+.herolabel {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    z-index: 2;
+    background-color: #30556c;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(8, 50, 87, 0.2);
+}
+.herolabel span {
+    font-size: 30px;
+    font-weight: 800;
+}
+.herolabel p {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+/* MANFAAT */
+.manfaatsection {
+    padding: 85px 5% 90px;
+    background-color: #30556c;
+}
+.manfaatlayout {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 22px;
+}
+.manfaatutama {
+    min-height: 380px;
+    padding: 40px;
+    background-color: #97ddd9;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s ease;
+}
+.manfaatutama:hover {
+    transform: rotate(-1deg);
+}
+.angkabesar {
+    color: #30556c;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 1;
+    opacity: 0.3;
+}
+.manfaatutama p {
+    color: #30556c;
+    font-size: 15px;
+    line-height: 1.9;
+    margin: 20px 0 0;
+    text-align: justify;
+}
+.manfaatkecil {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.kartukecil {
+    flex: 1;
+    padding: 24px 28px;
+    border-radius: 22px;
+    background-color: #fbf2e6;
+    transition: 0.3s ease;
+}
+.kartukecil:hover {
+    transform: translateX(8px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+.kartukecil h3 {
+    color: #196c96;
+    font-size: 19px;
+    margin: 0 0 8px;
+}
+.kartukecil p {
+    color: #526d7d;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+}
+/* LANGKAH */
+.langkahsection {
+    padding: 85px 5% 100px;
+    background-color: rgba(244, 228, 207, 0.85);
+}
+.garislangkah {
+    max-width: 1150px;
+    margin: auto;
+    position: relative;
+}
+.garislangkah::before {
+    content: "";
+    position: absolute;
+    left: 27px;
+    top: 10px;
+    bottom: 10px;
+    width: 4px;
+    background-color: #558ba7;
+    border-radius: 4px;
+}
+.langkah {
+    position: relative;
+    padding-left: 85px;
+    margin-bottom: 30px;
+}
+.langkah:last-child {
+    margin-bottom: 0;
+}
+.penanda {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background-color: #30556c;
+    color: #97ddd9;
+    font-size: 24px;
+    font-weight: 800;
+    border: 4px solid #fbf2e6;
+}
+.langkahcard {
+    padding: 30px;
+    background-color: #fbf2e6;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transition: 0.3s ease;
+}
+.langkahcard:hover {
+    transform: translateX(8px);
+    box-shadow: 0 12px 25px rgba(8, 50, 87, 0.15);
+}
+.langkahgelap {
+    background-color: #30556c;
+}
+.langkahteks {
+    flex: 1;
+    min-width: 0;
+}
+.langkahteks h3 {
+    color: #196c96;
+    font-size: 20px;
+    margin: 0 0 12px;
+}
+.langkahteks p {
+    color: #526d7d;
+    font-size: 14px;
+    line-height: 1.85;
+    margin: 0;
+    text-align: justify;
+}
+.langkahgelap .langkahteks h3 {
+    color: #97ddd9;
+}
+.langkahgelap .langkahteks p {
+    color: #e1edf0;
+}
+.kotaklangkah {
+    flex: 0 0 260px;
+    width: 260px;
+    height: 220px;
+}
+@media (max-width: 900px) {
+    .herosolusi {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+    .herovisual {
+        min-height: 300px;
+    }
+    .manfaatlayout {
+        grid-template-columns: 1fr;
+    }
+    .langkahcard {
+        flex-direction: column;
+    }
+    .kotaklangkah {
+        flex: none;
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .herosolusi {
+        width: 92%;
+        margin: 30px auto 45px;
+        padding: 28px 23px;
+    }
+    .judulpill {
+        width: 100%;
+        font-size: 22px;
+    }
+    .herocircle {
+        width: 230px;
+        height: 230px;
+    }
+    .kotakhero {
+        height: 270px;
+    }
+    .manfaatsection,
+    .langkahsection {
+        padding: 55px 5%;
+    }
+    .langkah {
+        padding-left: 65px;
+    }
+    .garislangkah::before {
+        left: 17px;
+    }
+    .penanda {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}

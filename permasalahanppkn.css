@@ -1,0 +1,559 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #083257;
+}
+main {
+    width: 100%;
+    overflow: hidden;
+}
+.heropermasalahan {
+    width: 90%;
+    max-width: 1450px;
+    min-height: 540px;
+    margin: 55px auto 80px;
+    padding: 55px 65px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 35px;
+    background-color: #fbf2e6;
+    border-radius: 35px;
+    box-shadow: 0 15px 35px rgba(8, 50, 87, 0.13);
+    overflow: hidden;
+}
+.herotext h1,
+.sectionheading h2 {
+    width: 470px;
+    max-width: 100%;
+    min-height: 75px;
+    margin: 0 auto 25px;
+    padding: 15px 25px;
+    background: #3f87a6;
+    color: #083257;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.herotext h1 {
+    margin: 0 0 22px;
+}
+.herotext h1:hover,
+.sectionheading h2:hover {
+    color: #fcffbf;
+    text-shadow: 0 0 8px rgba(254, 226, 173, 1), 0 0 20px rgba(254, 226, 173, 0.8);
+    transform: scale(1.06);
+}
+.herotext h2 {
+    color: #30556c;
+    font-size: 21px;
+    margin: 0 0 25px;
+}
+.herotext p {
+    color: #526d7d;
+    font-size: 15px;
+    line-height: 1.9;
+    text-align: justify;
+    margin: 0 0 15px;
+}
+.herobutton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 22px;
+    background-color: #558ba7;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.herobutton span {
+    margin-left: 12px;
+    font-size: 18px;
+}
+.herobutton:hover {
+    background-color: #30556c;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(8, 50, 87, 0.2);
+}
+.herovisual {
+    min-height: 390px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.herocircle {
+    width: 310px;
+    height: 310px;
+    background-color: #97ddd9;
+    border-radius: 50%;
+    position: absolute;
+}
+.herovisual img {
+    width: 88%;
+    max-width: 340px;
+    max-height: 370px;
+    padding: 8px;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    border-radius: 25px;
+    transform: rotate(3deg);
+    box-shadow: 0 15px 30px rgba(8, 50, 87, 0.2);
+    transition: 0.4s ease;
+}
+.herovisual img:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+.herolabel {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    z-index: 2;
+    background-color: #30556c;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(8, 50, 87, 0.2);
+}
+.herolabel span {
+    font-size: 30px;
+    font-weight: 800;
+}
+.herolabel p {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.lokasisection {
+    padding: 70px 5% 90px;
+    background-color: rgba(244, 228, 207, 0.85);
+}
+.sectionheading {
+    max-width: 900px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+.eyebrow {
+    color: #558ba7;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 0 0 14px;
+}
+.sectionheading > p:last-child {
+    color: #526d7d;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 700px;
+}
+.lokasilayout {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 22px;
+}
+.lokasimain {
+    min-height: 370px;
+    padding: 35px;
+    background-color: #30556c;
+    color: white;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s ease;
+}
+.lokasimain:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 25px rgba(8, 50, 87, 0.2);
+}
+.lokasinumber {
+    font-size: 65px;
+    font-weight: 800;
+    color: #97ddd9;
+    opacity: 0.8;
+}
+.lokasimain h3 {
+    font-size: 24px;
+    margin: 0 0 12px;
+}
+.lokasimain p {
+    color: #e1edf0;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+    max-width: 480px;
+}
+.lokasiside,
+.lokasisi.de {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.lokasicard {
+    flex: 1;
+    padding: 22px;
+    border-radius: 25px;
+    background-color: #fffaf2;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    transition: 0.3s ease;
+}
+.lokasicard:hover {
+    transform: translateX(8px);
+    box-shadow: 0 10px 22px rgba(8, 50, 87, 0.12);
+}
+.lokasicardtext {
+    flex: 1;
+    min-width: 0;
+}
+.lokasicard h3 {
+    color: #196c96;
+    font-size: 19px;
+    margin: 0 0 10px;
+}
+.lokasicard p {
+    color: #526d7d;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+}
+.lokasifoto {
+    position: relative;
+    flex: 0 0 125px;
+    width: 125px;
+    height: 125px;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 3px solid #39b5ca;
+    background-color: #d9f1ed;
+}
+.flip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.lokasifoto img,
+.penyebabfoto img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 0.5s ease;
+}
+.top {
+    opacity: 1;
+}
+.bottom {
+    opacity: 0;
+}
+.lokasifoto:hover .top,
+.penyebabfoto:hover .top {
+    opacity: 0;
+}
+.lokasifoto:hover .bottom,
+.penyebabfoto:hover .bottom {
+    opacity: 1;
+}
+.penyebabsection {
+    padding: 85px 5% 100px;
+    background-color: #30556c;
+}
+.lightheading .eyebrow {
+    color: #97ddd9;
+}
+.lightheading h2 {
+    color: #083257;
+}
+.lightheading > p:last-child {
+    color: #d8e8eb;
+}
+.penyebabgrid {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+.penyebabcard {
+    background-color: #fbf2e6;
+    border-radius: 22px;
+    overflow: hidden;
+    min-height: 230px;
+    transition: 0.3s ease;
+}
+.penyebabcard:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+.penyebabcard summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 25px;
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+.penyebabcard summary::-webkit-details-marker {
+    display: none;
+}
+.cardnumber {
+    color: #558ba7;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.penyebabfoto {
+    width: 100%;
+    height: 190px;
+    margin: 20px 0 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 3px solid #39b5ca;
+}
+.penyebabcard h3 {
+    color: #196c96;
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+.penyebabcard summary p {
+    color: #526d7d;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+    padding-right: 15px;
+}
+.plus {
+    position: absolute;
+    right: 22px;
+    bottom: 22px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: white;
+    background-color: #558ba7;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+.penyebabcard[open] .plus {
+    transform: rotate(45deg);
+    background-color: #30556c;
+}
+.detailtext {
+    padding: 0 25px 25px;
+    animation: reveal 0.3s ease;
+}
+.detailtext p {
+    color: #526d7d;
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
+    padding-top: 15px;
+    border-top: 1px solid #d9cdbb;
+}
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.dampaksection {
+    padding: 85px 5% 80px;
+    background-color: #fbf2e6;
+}
+.dampaklayout {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 35px;
+    align-items: stretch;
+}
+.dampakintro {
+    background-color: #97ddd9;
+    border-radius: 28px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+.dampakintro:hover {
+    transform: rotate(-1deg);
+}
+.dampaknumber {
+    color: #30556c;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 1;
+    opacity: 0.3;
+}
+.dampakintro h3 {
+    color: #30556c;
+    font-size: 29px;
+    line-height: 1.2;
+    margin: 20px 0 15px;
+}
+.dampakintro p {
+    color: #30556c;
+    font-size: 14px;
+    line-height: 1.9;
+    margin: 0;
+    text-align: justify;
+}
+.dampakitems {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.dampakitem {
+    flex: 1;
+    padding: 25px;
+    border-radius: 22px;
+    background-color: white;
+    transition: 0.3s ease;
+}
+.dampakitem:hover {
+    transform: translateX(8px);
+    box-shadow: 0 10px 22px rgba(8, 50, 87, 0.12);
+}
+.dampakitem h3 {
+    color: #196c96;
+    font-size: 19px;
+    margin: 0 0 8px;
+}
+.dampakitem p {
+    color: #526d7d;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+}
+.footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.footer img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 900px) {
+    .heropermasalahan {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+    .herovisual {
+        min-height: 300px;
+    }
+    .lokasilayout,
+    .dampaklayout {
+        grid-template-columns: 1fr;
+    }
+    .penyebabgrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .lokasimain {
+        min-height: 300px;
+    }
+}
+@media (max-width: 600px) {
+    .heropermasalahan {
+        width: 92%;
+        margin: 30px auto 45px;
+        padding: 28px 23px;
+    }
+    .herotext h1,
+    .sectionheading h2 {
+        width: 100%;
+        min-height: 75px;
+        height: auto;
+        font-size: 22px;
+        padding: 20px 15px;
+    }
+    .herotext h2 {
+        font-size: 18px;
+    }
+    .herovisual {
+        min-height: 250px;
+        padding: 10px;
+    }
+    .herovisual img {
+        width: 85%;
+        max-width: 260px;
+        max-height: 270px;
+    }
+    .herocircle {
+        width: 230px;
+        height: 230px;
+    }
+    .lokasisection,
+    .penyebabsection,
+    .dampaksection {
+        padding: 55px 5%;
+    }
+    .lokasicard {
+        gap: 15px;
+        padding: 18px;
+    }
+    .lokasifoto {
+        flex: 0 0 95px;
+        width: 95px;
+        height: 95px;
+    }
+    .lokasicard h3 {
+        font-size: 16px;
+    }
+    .lokasicard p {
+        font-size: 12px;
+    }
+    .penyebabgrid {
+        grid-template-columns: 1fr;
+    }
+    .penyebabfoto {
+        width: calc(100% + 50px);
+        height: 190px;
+    }
+    .dampakitem {
+        padding: 20px;
+    }
+    .dampakquote {
+        padding: 20px;
+    }
+    .dampakquote p {
+        font-size: 14px;
+    }
+}
